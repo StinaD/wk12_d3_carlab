@@ -39,4 +39,14 @@ public class Dealership {
         return result;
     }
 
+   public ArrayList<IRent> getAllVehiclesForRent(){
+        ArrayList<IRent> result = new ArrayList<IRent>();
+        for (Vehicle vehicle : vehicleStock){
+            if (vehicle instanceof IRent){
+                result.add((IRent) vehicle);
+            }
+        }
+        return result;
+   }
+
 }

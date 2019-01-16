@@ -59,6 +59,17 @@ public class DealershipTest {
 
     }
 
+    @Test
+    public void getAllVehiclesForRent(){
+        dealership.addVehicleStock(petrolCar);
+        dealership.addVehicleStock(hybridCar);
+        dealership.addVehicleStock(petrolCar);
+        dealership.addVehicleStock(electricCar);
+        assertEquals(3, dealership.getAllVehiclesForRent().size());
+
+
+    }
+
 
 
 }

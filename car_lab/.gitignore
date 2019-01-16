@@ -18,4 +18,5 @@
 .idea/
 out/
 target/
-.idea_modules/
+.idea_modules
+
