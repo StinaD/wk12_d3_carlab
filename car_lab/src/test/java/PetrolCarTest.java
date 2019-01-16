@@ -9,7 +9,7 @@ public class PetrolCarTest {
 
     @Before
     public void before(){
-        petrolCar = new PetrolCar(5, "Red", EngineType.PETROL);
+        petrolCar = new PetrolCar(5, "Red");
 
     }
 
@@ -27,4 +27,5 @@ public class PetrolCarTest {
     public void carHasEngineType(){
         assertEquals(EngineType.PETROL, petrolCar.getEngine());
     }
+
 }

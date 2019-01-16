@@ -1,6 +1,10 @@
-public class HybridCar extends Vehicle {
+public class HybridCar extends Vehicle implements ISell {
 
-    public HybridCar(int price, String colour, EngineType engine) {
-        super(price, colour, engine);
+    public HybridCar(int price, String colour) {
+        super(price, colour, EngineType.HYBRID);
+    }
+
+    public String sellCar() {
+        return "I'm for sale!";
     }
 }
